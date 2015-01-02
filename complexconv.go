@@ -57,8 +57,8 @@ func splitComplex(s string) (rstr string, istr string, err error) {
 
 // ParseComplex takes a string representation of a complex number and
 // returns the complex number.
-func ParseComplex(s string, bitSize int) (c complex128, err error) {
-	r, i := 0.0, 0.0
+func ParseComplex(s string) (c complex128, err error) {
+	r, i, bitSize := 0.0, 0.0, 64
 	rstr, istr, err := splitComplex(s) // first split the input string into parts
 	if err != nil {
 		return c, err
