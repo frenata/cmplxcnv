@@ -66,15 +66,11 @@ func ParseComplex(s string, bitSize int) (c complex128, err error) {
 
 	r, err = strconv.ParseFloat(rstr, bitSize)
 	if err != nil && rstr != "" { // ignore ParseFloat error from "", 0.0 value is correct
-		//fmt.Println(err)
-		//fmt.Println("real part error")
 		return c, err
 	}
 
 	i, err = strconv.ParseFloat(istr, bitSize)
 	if err != nil && istr != "" { // ignore error from "", 0.0 value is correct
-		//fmt.Println(err)
-		//fmt.Println("img part error")
 		return c, err
 	}
 
