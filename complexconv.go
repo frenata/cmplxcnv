@@ -8,6 +8,7 @@ import (
 	"strings"
 )
 
+//
 // isImagString returns true if s is a properly formed represenation of an imaginary number
 func isImagStr(s string) bool {
 	return strings.Contains(s, "i") && s[len(s)-1] == 'i'
