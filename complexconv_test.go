@@ -1,4 +1,4 @@
-package cmplxcnv
+package complexconv
 
 import (
 	"testing"
