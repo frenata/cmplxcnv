@@ -76,3 +76,9 @@ func ParseComplex(s string) (c complex128, err error) {
 
 	return complex(r, i), nil
 }
+
+type Complex complex128
+
+func (c Complex) String() string {
+	return "test"
+}
